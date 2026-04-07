@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TareaFlow</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>TareaFlow</header>
+
+<div class="container">
+
+  <div class="section-label">Nueva tarea</div>
+
+  <div class="card">
+
+    <div class="field">
+      <label class="field-label">Nombre de la tarea</label>
+      <input id="tarea" type="text" placeholder="Ej. Proyecto final de IHC" autocomplete="off">
+    </div>
+
+    <div class="field">
+      <label class="field-label">Materia</label>
+      <select id="materia">
+        <option value="">Selecciona materia</option>
+        <option>Lab Tematico IV</option>
+        <option>Interaccion Humano-Computadora</option>
+        <option>Corrientes Psicologicas</option>
+        <option>Integracion de Sistemas</option>
+        <option>Seminario de Comunicacion</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label class="field-label">Prioridad</label>
+      <select id="prioridad">
+        <option value="">Selecciona prioridad</option>
+        <option>Alta</option>
+        <option>Media</option>
+        <option>Baja</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label class="field-label">Fecha de entrega</label>
+      <input type="date" id="fecha">
+    </div>
+
+    <button onclick="agregarTarea()">＋ Agregar tarea</button>
+
+  </div>
+
+  <div class="section-label">Navegación</div>
+
+  <button onclick="window.location.href='tareas.html'">📋 Ver mis tareas</button>
+  <button class="btn-secondary" onclick="window.location.href='ayuda.html'">❓ Ayuda</button>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

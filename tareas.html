@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tareas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>Tareas</header>
+
+<div class="container">
+
+  <div class="card-filtros">
+    <select id="filtroEstado" onchange="mostrar()">
+      <option value="">Estado</option>
+      <option value="pendiente">Pendientes</option>
+      <option value="completada">Completadas</option>
+    </select>
+
+    <select id="filtroMateria" onchange="mostrar()">
+      <option value="">Materia</option>
+      <option>Lab Tematico IV</option>
+      <option>Interaccion Humano-Computadora</option>
+      <option>Corrientes Psicologicas</option>
+      <option>Integracion de Sistemas</option>
+      <option>Seminario de Comunicacion</option>
+    </select>
+
+    <select id="filtroPrioridad" onchange="mostrar()">
+      <option value="">Prioridad</option>
+      <option>Alta</option>
+      <option>Media</option>
+      <option>Baja</option>
+    </select>
+
+    <select id="orden" onchange="mostrar()">
+      <option value="prioridad">Ordenar por prioridad</option>
+      <option value="fecha">Ordenar por fecha</option>
+      <option value="materia">Ordenar por materia</option>
+    </select>
+  </div>
+
+  <div id="contador" class="task-counter" style="display:none">
+    <span id="contadorTexto"></span>
+    <span id="contadorSub"></span>
+  </div>
+
+  <div id="lista"></div>
+
+  <button class="btn-secondary" onclick="history.back()">Volver</button>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
